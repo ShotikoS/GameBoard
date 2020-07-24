@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="Lider-bet poker game board">
+    <meta name="keywords" content="games, poker, Lider-bet">
+    <title>Lider-bet</title>
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="images/logo.png">
+    <link rel="stylesheet" href="css/MainPage.css">
+    <link rel="stylesheet" href="css/Fonts.css">
+    <script src="https://kit.fontawesome.com/4106aa3140.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!--Header menu-->
+    <header class="Header">
+        <i class="fas fa-bars bar"></i>
+        <p class="ShowHideJackpot">Jackpot</p>
+        <div class="header__leftSection">
+            <img src="images/icons/Component13.svg" alt="logo" class="Logo">
+            <div class="jackpot__one">
+                <span id="JackPotOne__Num1" class="JackpotNumber__box">5</span>
+                <span id="JackPotOne__Num2" class="JackpotNumber__box">2</span>
+                <span id="JackPotOne__Num3" class="JackpotNumber__box">4</span>
+                <span id="JackPotOne__Num4" class="JackpotNumber__box">7</span>
+                <span id="JackPotOne__Num5" class="JackpotNumber__box">9</span>
+                <span id="JackPotOne__Num6" class="JackpotNumber__box lastNumbers" style="margin-left: 10px;">3</span>
+                <span id="JackPotOne__Num7" class="JackpotNumber__box lastNumbers">2</span>
+            </div>
+            <div class="Jackpot__two">
+                <span id="JackPotTwo__Num1" class="JackpotNumber__box">7</span>
+                <span id="JackPotTwo__Num2" class="JackpotNumber__box">1</span>
+                <span id="JackPotTwo__Num3" class="JackpotNumber__box">9</span>
+                <span id="JackPotTwo__Num4" class="JackpotNumber__box">1</span>
+                <span id="JackPotTwo__Num5" class="JackpotNumber__box">3</span>
+                <span id="JackPotTwo__Num6" class="JackpotNumber__box lastNumbers" style="margin-left: 10px;">9</span>
+                <span id="JackPotTwo__Num7" class="JackpotNumber__box lastNumbers">6</span>
+            </div>
+        </div>
+        <!--Header right section-->
+        <div class="header__rightSection">
+            <button class="cashier ENFont"><img src="images/icons/yidva_chipisa.svg" alt="cashierIcon" style="margin-right: 15px; height: 18px; width: 19px;"> Cashier</button>
+            <i class="fas fa-volume-up volume"></i>
+            <img src="images/icons/knmopkebi.svg" alt="settiongsIcon" class="SettingsIcon">
+            <br>
+            <i class="fas fa-th-large grid"></i>
+            <i class="fas fa-expand-arrows-alt FullScreen"></i>
+        </div>
+    </header>
+
+    <div class="GameIsStarted__container">
+        <div class="LSide__GameStarted">
+            <p class="GameIsStarted__Title">თამაში დაიწყო</p>
+            <div class="aboutGame">
+                <ul class="AboutGame__Lside">
+                    <li>ხანგრძლივობა</li>
+                    <li>ქოინების რაოდენობა</li>
+                    <li>მინიმალური ფსონი</li>
+                    <li>მასიმალური ფსონი</li>
+                </ul>
+                <ul class="AboutGame__Rside">
+                    <li>2 საათი</li>
+                    <li>2 ცალი</li>
+                    <li>22 ლარი</li>                    
+                    <li>70 ლარი</li>
+                </ul>
+            </div>
+            <p class="textInLside__gameStarted">
+                ტექსტის ადგილი
+            </p>
+        </div>
+        <div class="RSide__GameStarted">
+            <img src="images/JamingImg.png" alt="jamingInGameStarted" class="jamingInGameStarted">
+            <p class="MoneyInGameStarted ENFont">5000 <span style="font-size: 17px;">GEL</span></p>
+            <ul class="PrizeLSide">
+                <li><div class="prizeFlex"><span style="display: flex; align-items: center;margin-left: 5px;"><img src="images/icons/UserStrongGreen.svg" alt="UserIcon" style="width: 20px;">1 ადგილი </span><span class="Prize ENFont">2500 GEL</span> </div></li>
+                <li><div class="prizeFlex"><span style="display: flex; align-items: center;margin-left: 5px;"><img src="images/icons/UserStrongGreen.svg" alt="UserIcon" style="width: 20px;">2 ადგილი </span><span class="Prize ENFont">1500 GEL</span> </div></li>
+                <li><div class="prizeFlex"><span style="display: flex; align-items: center;margin-left: 5px;"><img src="images/icons/UserStrongGreen.svg" alt="UserIcon" style="width: 20px;">3 ადგილი </span><span class="Prize ENFont">1000 GEL</span> </div></li>
+            </ul>
+            <button class="EnterInGame">დაწყება</button>
+        </div>
+    </div>
+    <!--Main content container-->
+    <div class="MainContent__container">
+        <div class="Board__container">
+            <div class="Games__tab">
+                <ul class="PlayersQuantity__onTab">
+                    <li class="tabButtons ActiveBtn ENFont">ALL GAMES</li>
+                    <li class="tabButtons ENFont">ONLY 3 PLAYER</li>
+                    <li class="tabButtons ENFont">ONLY 5 PLAYER</li>
+                </ul>
+                <div class="usersOnline">
+                    <img src="images/icons/Mask.svg" alt="UserIcon" class="UsersIcon__OnlinePlayers">
+                    <p style="color: white; font-size: 14px; font-family: Poppins;">Online: 1274</p>
+                </div>
+            </div>
+            <div class="games">
+                <div class="gameBox">
+                    <p class="playersQuantity__onBox GeoFont">5 კაციანი</p>
+                    <div class="GameBox__GameInfoContainer">
+                        <p class="MaxWinNum">5000 <span style="font-size: 20px;">Gel</span></p>
+                        <p style="color:white; margin-top: -50px; cursor: default;" class="GeoFont">მაქს. მოგება</p>
+                        <ul class="usersIcon">
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                        </ul>
+                        <p class="GamePrice GeoFont">5 ლარი</p>
+                        <button class="registration__inGame GeoFont">რეგისტრაცია</button>
+                    </div>
+                </div>
+                <div class="gameBox">
+                    <p class="playersQuantity__onBox GeoFont">5 კაციანი</p>
+                    <div class="GameBox__GameInfoContainer">
+                        <p class="MaxWinNum">5000 <span style="font-size: 20px;">Gel</span></p>
+                        <p style="color:white; margin-top: -50px; cursor: default;" class="GeoFont">მაქს. მოგება</p>
+                        <ul class="usersIcon">
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                        </ul>
+                        <p class="GamePrice GeoFont">5 ლარი</p>
+                        <button class="registration__inGame GeoFont">რეგისტრაცია</button>
+                    </div>
+                </div>
+                <div class="gameBox">
+                    <p class="playersQuantity__onBox GeoFont">5 კაციანი</p>
+                    <div class="GameBox__GameInfoContainer">
+                        <p class="MaxWinNum">5000 <span style="font-size: 20px;">Gel</span></p>
+                        <p style="color:white; margin-top: -50px; cursor: default;" class="GeoFont">მაქს. მოგება</p>
+                        <ul class="usersIcon">
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                        </ul>
+                        <p class="GamePrice GeoFont">5 ლარი</p>
+                        <button class="registration__inGame GeoFont">რეგისტრაცია</button>
+                    </div>
+                </div>
+                <div class="gameBox">
+                    <p class="playersQuantity__onBox GeoFont">5 კაციანი</p>
+                    <div class="GameBox__GameInfoContainer">
+                        <p class="MaxWinNum">5000 <span style="font-size: 20px;">Gel</span></p>
+                        <p style="color:white; margin-top: -50px; cursor: default;" class="GeoFont">მაქს. მოგება</p>
+                        <ul class="usersIcon">
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                        </ul>
+                        <p class="GamePrice GeoFont">5 ლარი</p>
+                        <button class="registration__inGame GeoFont">რეგისტრაცია</button>
+                    </div>
+                </div>
+                <div class="gameBox">
+                    <p class="playersQuantity__onBox GeoFont">5 კაციანი</p>
+                    <div class="GameBox__GameInfoContainer">
+                        <p class="MaxWinNum">5000 <span style="font-size: 20px;">Gel</span></p>
+                        <p style="color:white; margin-top: -50px; cursor: default;" class="GeoFont">მაქს. მოგება</p>
+                        <ul class="usersIcon">
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                        </ul>
+                        <p class="GamePrice GeoFont">5 ლარი</p>
+                        <button class="registration__inGame GeoFont">რეგისტრაცია</button>
+                    </div>
+                </div>
+                <div class="gameBox">
+                    <p class="playersQuantity__onBox GeoFont">5 კაციანი</p>
+                    <div class="GameBox__GameInfoContainer">
+                        <p class="MaxWinNum">5000 <span style="font-size: 20px;">Gel</span></p>
+                        <p style="color:white; margin-top: -50px; cursor: default;" class="GeoFont">მაქს. მოგება</p>
+                        <ul class="usersIcon">
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                        </ul>
+                        <p class="GamePrice GeoFont">5 ლარი</p>
+                        <button class="registration__inGame GeoFont">რეგისტრაცია</button>
+                    </div>
+                </div>
+                <div class="gameBox">
+                    <p class="playersQuantity__onBox GeoFont">5 კაციანი</p>
+                    <div class="GameBox__GameInfoContainer">
+                        <p class="MaxWinNum">5000 <span style="font-size: 20px;">Gel</span></p>
+                        <p style="color:white; margin-top: -50px; cursor: default;" class="GeoFont">მაქს. მოგება</p>
+                        <ul class="usersIcon">
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                        </ul>
+                        <p class="GamePrice GeoFont">5 ლარი</p>
+                        <button class="registration__inGame GeoFont">რეგისტრაცია</button>
+                    </div>
+                </div>
+                <div class="gameBox">
+                    <p class="playersQuantity__onBox GeoFont">5 კაციანი</p>
+                    <div class="GameBox__GameInfoContainer">
+                        <p class="MaxWinNum">5000 <span style="font-size: 20px;">Gel</span></p>
+                        <p style="color:white; margin-top: -50px; cursor: default;" class="GeoFont">მაქს. მოგება</p>
+                        <ul class="usersIcon">
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                            <li><img src="images/icons/Mask_dark.svg" alt="UsersIcon"></li>
+                        </ul>
+                        <p class="GamePrice GeoFont">5 ლარი</p>
+                        <button class="registration__inGame GeoFont">რეგისტრაცია</button>
+                    </div>
+                </div>
+            </div>
+            <ul class="HistoryHead" style="display: none;">
+                <li>ტოპ მოგებები</li>
+                <li>ლიდერბორდი</li>
+                <li>ისტორია</li>
+                <li>წესები</li>
+            </ul>
+            <table class="BestWinTable">
+                <tr class="topWinsRow">
+                  <th>ნომერი</th>
+                  <th>დრო</th>
+                  <th>კოეფიციენტი</th>
+                  <th>მომხმარებელი</th>
+                  <th>მოგებული თანხა</th>
+                </tr>
+                <tr class="topWinsRow">
+                  <td>#4412452</td>
+                  <td>12:33</td>
+                  <td>2.13</td>
+                  <td><img src="images/icons/UserGreen.svg" alt="userInTopWins">Nodard</td>
+                  <td>33.35₾</td>
+                </tr>
+                <tr class="topWinsRow">
+                    <td>#4412452</td>
+                    <td>12:33</td>
+                    <td>2.13</td>
+                    <td><img src="images/icons/UserGreen.svg" alt="userInTopWins">Nodard</td>
+                    <td>33.35₾</td>
+                </tr>
+                <tr class="topWinsRow">
+                    <td>#4412452</td>
+                    <td>12:33</td>
+                    <td>2.13</td>
+                    <td><img src="images/icons/UserGreen.svg" alt="userInTopWins">Nodard</td>
+                    <td>33.35₾</td>
+                </tr>
+                <tr class="topWinsRow">
+                    <td>#4412452</td>
+                    <td>12:33</td>
+                    <td>2.13</td>
+                    <td><img src="images/icons/UserGreen.svg" alt="userInTopWins">Nodard</td>
+                    <td>33.35₾</td>
+                </tr>
+                <tr class="topWinsRow">
+                    <td>#4412452</td>
+                    <td>12:33</td>
+                    <td>2.13</td>
+                    <td><img src="images/icons/UserGreen.svg" alt="userInTopWins">Nodard</td>
+                    <td>33.35₾</td>
+                </tr>
+                <tr class="topWinsRow">
+                    <td>#4412452</td>
+                    <td>12:33</td>
+                    <td>2.13</td>
+                    <td><img src="images/icons/UserGreen.svg" alt="userInTopWins">Nodard</td>
+                    <td>33.35₾</td>
+                </tr>
+                <tr class="topWinsRow">
+                    <td>#4412452</td>
+                    <td>12:33</td>
+                    <td>2.13</td>
+                    <td><img src="images/icons/UserGreen.svg" alt="userInTopWins">Nodard</td>
+                    <td>33.35₾</td>
+                </tr>
+                <tr class="topWinsRow">
+                    <td>#4412452</td>
+                    <td>12:33</td>
+                    <td>2.13</td>
+                    <td><img src="images/icons/UserGreen.svg" alt="userInTopWins">Nodard</td>
+                    <td>33.35₾</td>
+                </tr>
+                <tr class="topWinsRow">
+                    <td>#4412452</td>
+                    <td>12:33</td>
+                    <td>2.13</td>
+                    <td><img src="images/icons/UserGreen.svg" alt="userInTopWins">Nodard</td>
+                    <td>33.35₾</td>
+                </tr>
+                
+              </table>
+        </div>
+        <div class="RightSection__history">
+            <div class="bonuses">
+                <p class="GeoFont HistoryBtn"><span><i class="fas fa-history historyIcon"></i></span> ისტორია</p>
+                <div class="bonuse__content">
+                    <div class="bonuse__logoPlace">
+                        <img src="images/icons/Component13.svg" alt="">
+                    </div>
+                    <h3 class="ENFont" style="color: white;">Muscul Bones</h3>
+                    <div class="Balance GeoFont">
+                        <div class="balance__LSide">
+                            <img src="images/icons/moneta.svg" alt="monetes"> 
+                            <p class="balance__Name"> ბალანსი</p>
+                        </div>
+                        <p class="balance__RSide">
+                            995.95 Gel
+                        </p>
+                    </div>
+                    <div class="FreeSpins GeoFont">
+                        <div class="FreeSpins__LSide">
+                            <img src="images/icons/S.svg" alt="S"> 
+                            <p class="FreeSpins__Name"> უფასო სპინები</p>
+                        </div>
+                        <p class="FreeSpin__RSide">
+                            9.7 Gel
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="topSpens__container">
+                <p class="topSpens__Title GeoFont">ტოპ სპინები</p>
+                <ul class="topSpens__content">
+                    <li>
+                        <p class="topSpen__header ENFont">5000 <span style="font-size: 18px;">Gel</span> <span class="topSpens__Date"><i class="fas fa-history historyIcon"></i> 23.04.29 15:42</span></p>
+                        <div class="Users__InTopSpen">
+                            <img src="images/icons/UserGreen.svg" alt="UserIcon">
+                            <p class="NamesInTopSpen">ნოდარა, ელდარა ემზარა</p>
+                            <i class="fas fa-plus-square plusUsers__topSpan"></i>
+                        </div>
+                        <p class="X2">1000 X 2</p>
+                    </li>
+                    <li>
+                        <p class="topSpen__header ENFont">5000 <span style="font-size: 18px;">Gel</span> <span class="topSpens__Date"><i class="fas fa-history historyIcon"></i> 23.04.29 15:42</span></p>
+                        <div class="Users__InTopSpen">
+                            <img src="images/icons/UserGreen.svg" alt="UserIcon">
+                            <p class="NamesInTopSpen">ნოდარა, ელდარა ემზარა</p>
+                            <i class="fas fa-plus-square plusUsers__topSpan"></i>
+                        </div>
+                        <p class="X2">1000 X 2</p>
+                    </li>
+                    <li>
+                        <p class="topSpen__header ENFont">5000 <span style="font-size: 18px;">Gel</span> <span class="topSpens__Date"><i class="fas fa-history historyIcon"></i> 23.04.29 15:42</span></p>
+                        <div class="Users__InTopSpen">
+                            <img src="images/icons/UserGreen.svg" alt="UserIcon">
+                            <p class="NamesInTopSpen">ნოდარა, ელდარა ემზარა</p>
+                            <i class="fas fa-plus-square plusUsers__topSpan"></i>
+                        </div>
+                        <p class="X2">1000 X 2</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" 
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="crossorigin="anonymous">
+    </script>
+
+    <script src="js/MainPage.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+@media (max-width: 1100px){
+    .bar{
+        visibility: visible !important;
+    }
+    .volume{
+        margin-left: 20px !important;
+    }
+    .SettingsIcon{
+        margin-left: 16px !important;
+    }
+    .FullScreen, .greed, .volume, .SettingsIcon{
+        margin-top: 10px;
+    }
+    .header__rightSection{
+        margin-top: 70px;
+        margin-right: 45px;
+        z-index: 100;
+        background-color: #35364A;
+        padding: 20px;
+        border-radius: 8px;
+        display: none !important;
+    }
+}
+@media(max-width: 800px){
+    .jackpot__one, .Jackpot__two{
+        display: none !important;
+    }
+    .ShowHideJackpot{
+        visibility: visible !important;
+        cursor: pointer;
+    }
+}
+@media(max-width: 920px){
+    .RightSection__history{
+        display: none !important;
+    }
+    .Board__container{
+        width: 100% !important;
+    }
+}
+@media(max-width: 552px){
+    .games{
+        justify-content: center !important;
+    }
+}
+@media(max-width: 700px){
+    .PlayersQuantity__onTab{
+        display: block !important;
+        z-index: 100;
+        margin-top: 87px;
+    }
+    .PlayersQuantity__onTab li{
+        padding: 0px 10px;
+        visibility: hidden;
+    }
+    .ActiveBtn{
+        visibility: visible !important;
+    }
+}
+@media(max-width: 500px){
+    .BestWinTable{
+        overflow: auto;
+    }
+}
+@media(max-width: 560px){
+    .GameIsStarted__container{
+        flex-wrap: wrap;
+        justify-content: center;
+        position: absolute !important;
+        top: 300px;
+    }
+    .RSide__GameStarted{
+        width: 58.7% !important;
+    }
+    .AboutGame__Lside li{
+        font-size: 12px;
+    }
+    .AboutGame__Rside li{
+        font-size: 12px;
+    }
+    .PrizeLSide li{
+        font-size: 12px;
+    }
+    .BestWinTable{
+        display: block !important;
+    }
+}

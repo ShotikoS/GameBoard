@@ -1,0 +1,948 @@
+p, ul li {
+  font-family: RobotoMono;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 3px gray;
+          box-shadow: inset 0 0 3px gray;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2196f3;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1d74bb;
+}
+
+.align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+table, th, td {
+  border-left: none;
+  border-right: none;
+}
+
+.ENFont {
+  font-family: Poppins !important;
+}
+
+.GeoFont {
+  font-family: RobotoMono !important;
+}
+
+body {
+  background-color: #202126;
+  padding-left: 0px 30px;
+}
+
+.Header {
+  width: 88%;
+  height: 100px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__leftSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Logo {
+  height: 44px;
+  width: 49px;
+  cursor: pointer;
+}
+
+.jackpot__one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20%;
+}
+
+.Jackpot__two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30px;
+}
+
+.JackpotNumber__box {
+  color: #D6D9D9;
+  width: 27px !important;
+  height: 34px;
+  font-size: 20px;
+  margin-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #505081;
+}
+
+.lastNumbers {
+  background-color: #40406D;
+  width: 23px !important;
+  height: 29px !important;
+}
+
+.cashier {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  outline: none;
+  background-color: #FFCA2A;
+  border: 1px solid #FFCA2A;
+}
+
+.header__rightSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.volume, .grid, .FullScreen {
+  color: #AFBBC4;
+  font-size: 20px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.SettingsIcon {
+  margin-left: 20px;
+  cursor: pointer;
+  color: #AFBBC4;
+}
+
+.grid, .FullScreen {
+  margin-left: 20px !important;
+}
+
+.bar {
+  position: absolute;
+  font-size: 29px;
+  color: #AFBBC4;
+  cursor: pointer;
+  margin-left: 100%;
+  -webkit-transform: translate(-100%);
+          transform: translate(-100%);
+  visibility: hidden;
+}
+
+.ShowHideJackpot {
+  position: absolute;
+  font-family: Galada;
+  font-weight: bold;
+  font-size: 35px;
+  color: #505081;
+  margin-left: 50%;
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
+  margin-top: -5px;
+  visibility: hidden;
+}
+
+.active {
+  display: block !important;
+}
+
+.MainContent__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 88%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.Board__container {
+  width: calc(100% - 260px);
+}
+
+.Games__tab {
+  background-color: #3D2F60;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.PlayersQuantity__onTab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -55px;
+}
+
+.PlayersQuantity__onTab li {
+  border: #3D2F60;
+  background-color: #3D2F60;
+  outline: none;
+  color: white;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  margin: 0px 15px;
+  cursor: pointer;
+}
+
+.ActiveBtn {
+  border-bottom: #FF00B2 2px solid !important;
+  color: #FFFF00 !important;
+}
+
+.usersOnline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.UsersIcon__OnlinePlayers {
+  margin-right: 8px;
+}
+
+.games {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: auto;
+  height: 596px;
+}
+
+.gameBox {
+  width: 200px;
+  background-color: #5f39b7;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 0px 10px;
+}
+
+.playersQuantity__onBox {
+  color: white;
+  margin-top: 10px;
+  width: 80px;
+  cursor: default;
+  height: 30px;
+  border-bottom: 2px #95C7EE solid;
+}
+
+.GameBox__GameInfoContainer {
+  text-align: center;
+}
+
+.MaxWinNum {
+  font-size: 45px;
+  color: white;
+  cursor: default;
+  margin-top: 5px;
+  font-family: NumbersExtraBold;
+}
+
+.usersIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.usersIcon li {
+  list-style: none;
+  margin: 0px 5px;
+}
+
+.GamePrice {
+  background-color: #FFE926;
+  width: 90px;
+  padding: 5px 0px;
+  border-radius: 20px;
+  margin-left: 50%;
+  cursor: default;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.registration__inGame {
+  margin-bottom: 10px;
+  background-color: #764ED4;
+  border: 1px solid #764ED4;
+  height: 40px;
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.registration__inGame:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.HistoryHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -25px;
+  margin-top: 35px;
+}
+
+.HistoryHead li {
+  list-style-type: none;
+  margin: 0px 20px;
+  color: #C5D8F9;
+  cursor: pointer;
+}
+
+.BestWinTable {
+  width: 100%;
+  text-align: center;
+  color: #C5D8F9;
+  display: inline-table;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.topWinsRow:nth-child(even) {
+  background-color: #2b2e3a;
+}
+
+.topWinsRow:nth-child(odd) {
+  background-color: #272936;
+}
+
+.topWinsRow {
+  height: 45px;
+}
+
+.RightSection__history {
+  width: 250px;
+}
+
+.bonuses {
+  background-color: #3b354a;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.historyIcon {
+  color: #C5D8F9;
+}
+
+.HistoryBtn {
+  color: #C5D8F9;
+  float: right;
+  border: 1px solid #C5D8F9;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.bonuse__content {
+  padding-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 6px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bonuse__logoPlace {
+  width: 110px;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background-color: #5936b1;
+  border: 7px #9c75f8 solid;
+}
+
+.Balance, .FreeSpins {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  color: #C5D8F9;
+  height: 40px;
+  cursor: pointer;
+  background-color: #6e717e;
+  font-size: 12px;
+  padding: 0px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+}
+
+.balance__LSide, .FreeSpins__LSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.balance__Name, .FreeSpins__Name {
+  margin-left: 5px;
+}
+
+.FreeSpins {
+  margin-top: 10px;
+  background-color: #217c8b !important;
+  margin-bottom: 20px;
+}
+
+.topSpens__container {
+  background-color: #35364A;
+  width: 250px;
+  margin-top: 10px;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.topSpens__Title {
+  color: #C5D8F9;
+  width: 100px;
+  padding-bottom: 7px;
+  border-bottom: #FFE926 3px solid;
+  font-size: 15px;
+  padding: 5px 7px;
+}
+
+.topSpens__content {
+  padding: 5px 7px;
+  margin: 0;
+}
+
+.topSpens__content li {
+  list-style-type: none;
+  margin-top: -20px;
+  border-radius: 7px;
+  margin-top: 8px;
+  padding: 12px 7px;
+  background: #444563;
+}
+
+.topSpen__header {
+  font-size: 30px;
+  color: #39B7FF;
+  margin: 0px;
+}
+
+.topSpens__Date {
+  font-size: 10px;
+  float: right;
+  color: #ababb9 !important;
+}
+
+.Users__InTopSpen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+}
+
+.NamesInTopSpen {
+  font-size: 14px;
+  color: #C5D8F9;
+  width: 170px;
+  margin: 0px;
+  margin-left: 7px !important;
+}
+
+.plusUsers__topSpan {
+  color: #C5D8F9;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.X2 {
+  color: #C5D8F9;
+  font-size: 17px;
+  margin: 0px;
+}
+
+.test {
+  background-color: #198a9c;
+  width: 435px;
+  height: 280px;
+}
+
+.headOfGameRegistration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 15px;
+  color: white;
+}
+
+.CashInReg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.PlayersInReg {
+  border-bottom: #95C7EE 3px solid;
+  padding-bottom: 13px;
+}
+
+.gamePriceInReg {
+  background-color: #FFE926;
+  border-radius: 20px;
+  border: 1px #FFE926 solid;
+  padding: 5px 18px;
+  color: black;
+}
+
+.maxWinInReg {
+  font-size: 30px;
+  color: white;
+  margin-left: 20px;
+}
+
+.CentralContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Jaming {
+  width: 144px;
+  height: 74px;
+  border-radius: 7px;
+  margin: 0px 5px;
+  border: 1px #56BEC9 solid;
+  padding: 8px;
+}
+
+.coeficient {
+  width: 160px;
+  margin: 0px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+  border-radius: 7px;
+  color: white;
+  font-weight: bold;
+  height: 90px;
+  border: 1px #56BEC9 solid;
+}
+
+.UsersWAittingForGame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 250px;
+  float: left;
+  margin-top: -20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.UsersWAittingForGame li {
+  list-style-type: none;
+  margin-top: 40px;
+}
+
+.startButtonInReg {
+  margin-top: 10px;
+  background-color: #2DBFB5;
+  color: white;
+  border-radius: 6px;
+  border: 1px #2DBFB5 solid;
+  font-size: 17px;
+  outline: none;
+  cursor: pointer;
+  margin-left: 30px;
+  width: 85px;
+  height: 40px;
+}
+
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+  font-size: 14px;
+  color: white;
+  margin-top: -25px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.coefText {
+  background-color: #198a9c;
+  padding: 0px 8px;
+}
+
+.jamingText {
+  background-color: #198a9c;
+  padding: 0px 8px;
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.UserIconInReg {
+  width: 20px;
+}
+
+.contentInLoadGame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.loadGameHead {
+  color: white;
+}
+
+.usersIconInLoadGame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+  margin-left: 50%;
+  -webkit-transform: translateX(-31%);
+          transform: translateX(-31%);
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.usersIconInLoadGame li {
+  list-style-type: none;
+}
+
+.TimeBeforeStartGame {
+  margin-top: 0px;
+  color: white;
+  font-size: 14px;
+}
+
+.loadFullLine {
+  width: 65%;
+  height: 2px;
+  background-color: #26C6DF;
+}
+
+.loadLine {
+  width: 50px;
+  height: 2px;
+  background-color: #17FF4D;
+}
+
+.cancelGame {
+  background-color: #1A6F7D;
+  border: 1px solid #1A6F7D;
+  color: white;
+  height: 38px;
+  width: 95px;
+  border-radius: 6px;
+  margin-top: 8px;
+  margin-left: 70%;
+  cursor: pointer;
+  outline: none;
+}
+
+.GameIsStarted__container {
+  width: 98%;
+  visibility: hidden;
+  max-width: 600px;
+  z-index: 10000;
+  border-radius: 7px;
+  position: absolute;
+  margin-left: 50%;
+  -webkit-transform: translate(-52%, -75%);
+          transform: translate(-52%, -75%);
+  margin-top: 300px !important;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.LSide__GameStarted {
+  width: 53%;
+  padding: 0px 15px;
+  background-color: #201932;
+}
+
+.RSide__GameStarted {
+  width: 47%;
+  background-color: #352d4b;
+}
+
+.GameIsStarted__Title {
+  color: white;
+}
+
+.aboutGame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 35px;
+}
+
+.AboutGame__Lside {
+  margin: 0;
+  padding: 0;
+  margin-top: -18px;
+}
+
+.AboutGame__Lside li {
+  list-style-type: none;
+  margin-top: 18px;
+  color: white;
+}
+
+.AboutGame__Rside {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: -18px;
+}
+
+.AboutGame__Rside li {
+  color: #FFE926;
+  margin-top: 18px;
+  text-align: right;
+}
+
+.textInLside__gameStarted {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin-top: 12px;
+  height: 130px;
+}
+
+.jamingInGameStarted {
+  width: 52%;
+  margin-top: 40px;
+  border: #56BEC9 1px solid;
+  padding: 8px;
+  border-radius: 7px;
+}
+
+.RSide__GameStarted {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.MoneyInGameStarted {
+  font-size: 32px;
+  margin-top: 10px;
+  color: #FFE926;
+}
+
+.PrizeLSide {
+  padding: 0;
+  margin: 0;
+  margin-top: -34px;
+  width: 72%;
+}
+
+.prizeFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.PrizeLSide li {
+  font-size: 14px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background-color: #413858;
+  padding: 8px 0px;
+  border-radius: 20px;
+  margin-top: 7px;
+}
+
+.Prize {
+  color: #FFFF00;
+  margin-right: 5px;
+}
+
+.EnterInGame {
+  margin-top: 20px;
+  color: white;
+  background-color: #2dbfb5;
+  border: #2dbfb5 1px solid;
+  border-radius: 5px;
+  height: 35px;
+  width: 75px;
+  margin-left: 50%;
+  outline: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=MainPage.css.map */
